@@ -17,7 +17,10 @@ app.use(cors({
   origin: [
     'https://mesto-mifiriya.nomorepartiessbs.ru',
     'http://mesto-mifiriya.nomorepartiessbs.ru',
+    'http://158.160.199.167',
+    'https://158.160.199.167',
   ],
+  credentials: true,
   methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'HEAD', 'OPTIONS'],
 }));
 app.use(express.json());
